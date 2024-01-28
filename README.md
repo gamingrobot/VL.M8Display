@@ -1,6 +1,6 @@
 # VL.M8Display
 
-Dirtywave M8 Remote Display for vvvv
+[Dirtywave](https://dirtywave.com) M8 Remote Display for [vvvv gamma](https://visualprogramming.net/)
 
 ## Installing
 
