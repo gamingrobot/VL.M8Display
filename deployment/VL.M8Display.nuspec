@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.M8Display</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>VL.M8Display</title>
     <authors>gamingrobot</authors>
     <owners>gamingrobot</owners>
@@ -10,7 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Dirtywave M8 Remote Display for vvvv</summary>
     <description>Dirtywave M8 Remote Display for vvvv</description>
-    <tags>nuget</tags>
+    <tags>VL m8</tags>
     <readme>docs\README.md</readme>
 	<license type="expression">MIT</license>
   </metadata>
