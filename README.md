@@ -1,5 +1,7 @@
 # VL.M8Display
 
+[![NuGet](https://img.shields.io/nuget/v/VL.M8Display.svg)](https://www.nuget.org/packages/VL.M8Display)
+
 [Dirtywave](https://dirtywave.com) M8 Remote Display for [vvvv gamma](https://visualprogramming.net/)
 
 ## Installing
