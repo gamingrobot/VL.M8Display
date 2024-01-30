@@ -15,18 +15,6 @@
       </p:NodeReference>
       <Patch Id="DJLCcxiBuz7QF7cIoiJurU">
         <Canvas Id="Lyxw6Uv4kCEPY3gFFWL9YU" CanvasType="Group">
-          <Node Bounds="436,257,65,19" Id="NoPB3nHDUuZLKl2XaOLIyP">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.M8Display.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="M8Display" />
-            </p:NodeReference>
-            <Pin Id="Mo19Ti9PcawNYeKAeRAlAp" Name="Reset" Kind="InputPin" />
-            <Pin Id="AXK7SBAMvxwMGJsRWe7ewk" Name="Port" Kind="InputPin" />
-            <Pin Id="ApZENm4n2wAMmwY4M3xtk8" Name="Open" Kind="InputPin" />
-            <Pin Id="GEt9sPqPitOLJcYsVBWu58" Name="SKImage" Kind="OutputPin" />
-            <Pin Id="Tsge47Wt4PtN42QOpBGwCu" Name="Texture" Kind="OutputPin" />
-            <Pin Id="GSEvgY6TCTgNMUrmLWAxES" Name="Is Open" Kind="OutputPin" />
-          </Node>
           <Pad Id="KUMgBX1ZPhfNxcyi6z2Xc3" Comment="Port" Bounds="486,217,56,15" ShowValueBox="true" isIOBox="true" Value="COM3">
             <p:TypeAnnotation LastCategoryFullName="IO.Ports" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="ComPort" />
@@ -41,8 +29,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IYIpz8zbpz0PK17jLUJC6m" Comment="Is Open" Bounds="537,299,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="TpsnbaGgjqxNv8Ks5WRtVn" Comment="" Bounds="182,363,193,151" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IYIpz8zbpz0PK17jLUJC6m" Comment="Is Open" Bounds="538,316,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="NFoCrwnCFEbMLX4g2dMob8" Comment="" Bounds="424,384,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PWgLZr0Gc7WOewas2cLQYA" Comment="Reset" Bounds="387,202,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -227,6 +214,17 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="450,268,77,19" Id="POVMbeQtSrDNOCpIytPI9S">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.M8Display.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="M8ToTexture" />
+            </p:NodeReference>
+            <Pin Id="C7z48NllYJ2QO8jZMVYfOI" Name="Reset" Kind="InputPin" />
+            <Pin Id="N9PV1ffIUm5OlxORERUWzX" Name="Port" Kind="InputPin" />
+            <Pin Id="K3Ii8Q77sb1NT4QbFwLA7U" Name="Open" Kind="InputPin" />
+            <Pin Id="FV1dyyZKljzMuARU2BeNP1" Name="Result" Kind="OutputPin" />
+            <Pin Id="MEUb9wlj8SHNKqMx72dckN" Name="Is Open" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="RJIUQKdMseqPjPIWqdXeIs" Name="Create" />
         <Patch Id="AqhgJpT8xEYNkuxR9zT2xU" Name="Update" />
@@ -234,12 +232,6 @@
           <Fragment Id="MG0u5pxWROkMxui3ykF2C7" Patch="RJIUQKdMseqPjPIWqdXeIs" Enabled="true" />
           <Fragment Id="NBGmGac8FMvLR7hZcKhaOr" Patch="AqhgJpT8xEYNkuxR9zT2xU" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="QvtdDIeF9NuNuCr1RyzmWQ" Ids="KUMgBX1ZPhfNxcyi6z2Xc3,AXK7SBAMvxwMGJsRWe7ewk" />
-        <Link Id="Gl4ePfUIapVLdBVSto9qzy" Ids="QYfSyx13CiQOQQBVfxWTOK,ApZENm4n2wAMmwY4M3xtk8" />
-        <Link Id="VKVzJkXkOfBP243dLrKRkx" Ids="GSEvgY6TCTgNMUrmLWAxES,IYIpz8zbpz0PK17jLUJC6m" />
-        <Link Id="I3lWfCSF3g5LaVJSx0C6Ci" Ids="GEt9sPqPitOLJcYsVBWu58,TpsnbaGgjqxNv8Ks5WRtVn" />
-        <Link Id="NY5Ehre4EZuNQ0xPyu3sNS" Ids="Tsge47Wt4PtN42QOpBGwCu,NFoCrwnCFEbMLX4g2dMob8" />
-        <Link Id="R8gNB9LwJwtQbE2ZaAAhjM" Ids="PWgLZr0Gc7WOewas2cLQYA,Mo19Ti9PcawNYeKAeRAlAp" />
         <Link Id="DSlwrlc3bblP32vUGuQkd0" Ids="IfvkZWNCPHXQHxrDQcq4wc,AfNTdvyZWTlPaNG07Ztj3K" />
         <Link Id="EQGSCKrW86PPEGAjQQ0Twm" Ids="ThPFOfFQY1hOuJdTVC1dXK,TCiNWQrsczzMTuumZRRLne" />
         <Link Id="JjXvp4F7a0MObLBlnjLTYl" Ids="Rf8B4kOMTKVQE60UbL4Zf3,EByJbVe8lAPNuByyuV6QPF" />
@@ -252,6 +244,10 @@
         <Link Id="Dg9Z6TJzQOJPgEOw3rKUIg" Ids="UVUfH0uRf4lMwiwoeD664t,AzfktM5Hq3yNNObnPEEvjf" />
         <Link Id="DMrZ1XxqNOVNsovHW3q5Iw" Ids="F9ARbPJWMcIPueBoh91Cfc,RCwqLlE77suMfJLvAthUmj" />
         <Link Id="GmtrGrQqenMOf9F03k9tsp" Ids="Llsr9MdtedlQWUu51x1ymM,PwUFmng9uqmL3IIN21lfl1" />
+        <Link Id="JJXGK4KGc9gNtEIMQzeuQL" Ids="PWgLZr0Gc7WOewas2cLQYA,C7z48NllYJ2QO8jZMVYfOI" />
+        <Link Id="GhbytvnU3h2QRRozce0CDW" Ids="KUMgBX1ZPhfNxcyi6z2Xc3,N9PV1ffIUm5OlxORERUWzX" />
+        <Link Id="V8NV7yzjoStLgaCIZN68IW" Ids="MEUb9wlj8SHNKqMx72dckN,IYIpz8zbpz0PK17jLUJC6m" />
+        <Link Id="BQTUT78XRbPNYxw4ZGQiFZ" Ids="QYfSyx13CiQOQQBVfxWTOK,K3Ii8Q77sb1NT4QbFwLA7U" />
       </Patch>
     </Node>
   </Patch>

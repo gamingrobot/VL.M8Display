@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="UeX7PJzrq4VNhZAvAG4AiW" LanguageVersion="2023.5.2" Version="0.128">
+  <NugetDependency Id="Ip3fB2gK1PjNu8pXO8MDOU" Location="VL.CoreLib" Version="2023.5.2" />
+  <Patch Id="NI2zNzJ8njjMMXMLwJc0iZ">
+    <Canvas Id="GtQ6kLTTnSSMsWVzZUmNSj" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="PTaJhxZXeBXMszHfa9r2Zd">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="DJLCcxiBuz7QF7cIoiJurU">
+        <Canvas Id="Lyxw6Uv4kCEPY3gFFWL9YU" CanvasType="Group">
+          <Pad Id="KUMgBX1ZPhfNxcyi6z2Xc3" Comment="Port" Bounds="486,217,56,15" ShowValueBox="true" isIOBox="true" Value="COM3">
+            <p:TypeAnnotation LastCategoryFullName="IO.Ports" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="ComPort" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QYfSyx13CiQOQQBVfxWTOK" Comment="Open" Bounds="639,225,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IYIpz8zbpz0PK17jLUJC6m" Comment="Is Open" Bounds="524,344,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PWgLZr0Gc7WOewas2cLQYA" Comment="Reset" Bounds="387,202,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Omq6M9ZCxbSMOLh4mJHcSS" Bounds="386,95,242,73" ShowValueBox="true" isIOBox="true" Value="1. Select COM port&#xD;&#xA;2. Toggle Open on&#xD;&#xA;3. Hit Reset to connect">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="419,299,81,19" Id="QvsBofoFxviLrxhvPW6dro">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.M8Display.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="M8ToSKImage" />
+            </p:NodeReference>
+            <Pin Id="TByj2RCLcyQNpzuQQlyEt4" Name="Reset" Kind="InputPin" />
+            <Pin Id="IaxSlSRtYA5MAphIga8OjO" Name="Port" Kind="InputPin" />
+            <Pin Id="DPa3G0VtuuFL1JWvjPc0WD" Name="Open" Kind="InputPin" />
+            <Pin Id="FvgJKxYuhkXLguIA8t98r3" Name="Result" Kind="OutputPin" />
+            <Pin Id="DZ5g4YkhVToNx3Ytu8QZBb" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Pad Id="MI5j0jNokdFMtfvNd3AAoM" Comment="" Bounds="413,398,190,132" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="412,612,125,19" Id="QelbaGzVdpgNf0G3cxXr3G">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="M1rUIymTnIvMNNrVlNpNoM" Name="Image" Kind="InputPin" />
+            <Pin Id="QFP9IVNH8LwMr2KbgHHSh0" Name="Position" Kind="InputPin" />
+            <Pin Id="HnkUnE9ru09OakKkaa7e4L" Name="Size" Kind="InputPin" />
+            <Pin Id="JBvibc33KhrP25gbmPD19h" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="LwTSgRGr5znP3SdMPSGVx7" Name="Anchor" Kind="InputPin" />
+            <Pin Id="RTLW2iHnqI3MSxOQqthNq1" Name="Paint" Kind="InputPin" />
+            <Pin Id="Oz3Rxk0jLTSLGSUkkC8I9p" Name="Enabled" Kind="InputPin" />
+            <Pin Id="QD0bMQwWvHQPrhktcOQrZd" Name="Output" Kind="OutputPin" />
+            <Pin Id="DIj8qBOki4RLgIRW22gmG4" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="406,686,145,19" Id="R545Xg3kv1sQUruVCYSZUW">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+            </p:NodeReference>
+            <Pin Id="M0DQ4XtClcOQCHpQ4J3RDt" Name="Bounds" Kind="InputPin" DefaultValue="1495, 552, 616, 490" />
+            <Pin Id="JP5XhKVTDIRPolr7h4CWOs" Name="Input" Kind="InputPin" />
+            <Pin Id="UwnYXCvSy8SN0LokAfOrfn" Name="Color" Kind="InputPin" />
+            <Pin Id="GYnr6ZyPSjBMHcohgHFiR3" Name="Clear" Kind="InputPin" />
+            <Pin Id="LuDQEUse2loPiaMqBBZWh8" Name="Space" Kind="InputPin" />
+            <Pin Id="S1AjTb3yE7oMzsG00waMpI" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="OoSZsif2sx7MwBIUHhqWWK" Name="VSync" Kind="InputPin" />
+            <Pin Id="Crfxmj6LUZGLWtCUhlXZZA" Name="Enabled" Kind="InputPin" />
+            <Pin Id="ATO2IbW47pnPtf1WRt4rf2" Name="Form" Kind="OutputPin" />
+            <Pin Id="FYuY3xAKZjgNpfDY5sT2Yh" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="UmbUEWDBcF3Ob7zmZjeUfb" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Pad Id="C15uPiIuqQqOHv2ycIGlxJ" Comment="Size" Bounds="486,575,35,28" ShowValueBox="true" isIOBox="true" Value="2, 2">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="RJIUQKdMseqPjPIWqdXeIs" Name="Create" />
+        <Patch Id="AqhgJpT8xEYNkuxR9zT2xU" Name="Update" />
+        <ProcessDefinition Id="N0hgkssleDEM3XDzXpeWni">
+          <Fragment Id="MG0u5pxWROkMxui3ykF2C7" Patch="RJIUQKdMseqPjPIWqdXeIs" Enabled="true" />
+          <Fragment Id="NBGmGac8FMvLR7hZcKhaOr" Patch="AqhgJpT8xEYNkuxR9zT2xU" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="CRbpDxfFXxtQU6RlflnEQd" Ids="PWgLZr0Gc7WOewas2cLQYA,TByj2RCLcyQNpzuQQlyEt4" />
+        <Link Id="RMbdIqYneNoOmbfsKV3NpZ" Ids="KUMgBX1ZPhfNxcyi6z2Xc3,IaxSlSRtYA5MAphIga8OjO" />
+        <Link Id="GLjWOvvwxSfLJWYAOmMrhs" Ids="QYfSyx13CiQOQQBVfxWTOK,DPa3G0VtuuFL1JWvjPc0WD" />
+        <Link Id="CK1Iky56nVVLJ0WO5KzwJM" Ids="DZ5g4YkhVToNx3Ytu8QZBb,IYIpz8zbpz0PK17jLUJC6m" />
+        <Link Id="V62rjUkxD47NlO1X9dyDFf" Ids="FvgJKxYuhkXLguIA8t98r3,MI5j0jNokdFMtfvNd3AAoM" />
+        <Link Id="AxUD1TzBFTWMFNumGXh6yR" Ids="MI5j0jNokdFMtfvNd3AAoM,M1rUIymTnIvMNNrVlNpNoM" />
+        <Link Id="FH5bm9KF0r9PcAsvK6c2MJ" Ids="QD0bMQwWvHQPrhktcOQrZd,JP5XhKVTDIRPolr7h4CWOs" />
+        <Link Id="VZY1WHPZG1TPPbvY4ddyhW" Ids="C15uPiIuqQqOHv2ycIGlxJ,HnkUnE9ru09OakKkaa7e4L" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="H8eXPWLKs8yP41WlUuZfDU" Location="../VL.M8Display.vl" />
+  <NugetDependency Id="EOWYVFyXSEBPoOMv3bPGbH" Location="VL.Stride" Version="2023.5.2" />
+  <NugetDependency Id="D1U68nVUHNzMEtoxDRext0" Location="VL.Skia" Version="2023.5.2" />
+</Document>
