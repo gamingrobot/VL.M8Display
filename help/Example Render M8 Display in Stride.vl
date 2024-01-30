@@ -29,8 +29,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IYIpz8zbpz0PK17jLUJC6m" Comment="Is Open" Bounds="537,299,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NFoCrwnCFEbMLX4g2dMob8" Comment="" Bounds="424,384,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IYIpz8zbpz0PK17jLUJC6m" Comment="Is Open" Bounds="634,301,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NFoCrwnCFEbMLX4g2dMob8" Comment="" Bounds="423,440,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PWgLZr0Gc7WOewas2cLQYA" Comment="Reset" Bounds="387,202,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -49,7 +49,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="558,697,225,19" Id="SZ8relprJnYP26JRWdnxO4">
+          <Node Bounds="557,753,225,19" Id="SZ8relprJnYP26JRWdnxO4">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
@@ -70,7 +70,7 @@
             <Pin Id="QCsOdzfUj79LSteFiofeF1" Name="Client Bounds" Kind="OutputPin" />
             <Pin Id="SVVm9aY9LaxNGKgJxjYo7T" Name="Input Source" Kind="OutputPin" />
           </Node>
-          <Node Bounds="557,627,205,19" Id="O7g4lBGS9q8Lehuvjd6YMB">
+          <Node Bounds="556,683,205,19" Id="O7g4lBGS9q8Lehuvjd6YMB">
             <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Plane" />
@@ -88,7 +88,7 @@
             <Pin Id="KPAHp0PiifYOyAa1Rr7ixi" Name="Enabled" Kind="InputPin" />
             <Pin Id="J4ZUqNZs5FXNg0qFUd9EJt" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Node Bounds="558,658,63,19" Id="LuRc2P5UXWNMCLbod5pGf7">
+          <Node Bounds="557,714,63,19" Id="LuRc2P5UXWNMCLbod5pGf7">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RootScene" />
@@ -98,7 +98,7 @@
             <Pin Id="Ft1Cu443k3cPVeMX4f7KB7" Name="Enabled" Kind="InputPin" />
             <Pin Id="IfvkZWNCPHXQHxrDQcq4wc" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="473,539,185,19" Id="GUtcFbRoXZ1OwsTf8gkUbz">
+          <Node Bounds="472,595,185,19" Id="GUtcFbRoXZ1OwsTf8gkUbz">
             <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureMaterial" />
@@ -115,12 +115,12 @@
             <Pin Id="JjPcix7skpTPKaFNhWGYPM" Name="Cull Mode" Kind="InputPin" />
             <Pin Id="ThPFOfFQY1hOuJdTVC1dXK" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Rf8B4kOMTKVQE60UbL4Zf3" Comment="Size" Bounds="649,577,35,28" ShowValueBox="true" isIOBox="true" Value="8, 6">
+          <Pad Id="Rf8B4kOMTKVQE60UbL4Zf3" Comment="Size" Bounds="648,633,35,28" ShowValueBox="true" isIOBox="true" Value="8, 6">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="417,790,285,19" Id="Fmzo1fJBThSOLlLU2pGTzq">
+          <Node Bounds="416,846,285,19" Id="Fmzo1fJBThSOLlLU2pGTzq">
             <p:NodeReference LastCategoryFullName="Stride.Textures" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
@@ -145,12 +145,12 @@
             <Pin Id="AweWoGV8rtDMt3c53mNt2w" Name="Input Source" Kind="OutputPin" />
             <Pin Id="Snda51STHIWONYCIdcsWOx" Name="Back Buffer" Kind="OutputPin" />
           </Node>
-          <Pad Id="NkrY5GVa1jAN6PwUYTa8rL" Comment="Scaling Mode" Bounds="643,757,109,15" ShowValueBox="true" isIOBox="true" Value="NearestNeighbor">
+          <Pad Id="NkrY5GVa1jAN6PwUYTa8rL" Comment="Scaling Mode" Bounds="642,813,109,15" ShowValueBox="true" isIOBox="true" Value="NearestNeighbor">
             <p:TypeAnnotation LastCategoryFullName="Stride.Textures.Utils" LastDependency="VL.Stride.vl">
               <Choice Kind="TypeFlag" Name="ResizeInterpolationType" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="440,267,77,19" Id="PR8aCa7Zb8zODMpzgNzQhx">
+          <Node Bounds="440,267,166,19" Id="PR8aCa7Zb8zODMpzgNzQhx">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.M8Display.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="M8ToTexture" />
@@ -159,8 +159,16 @@
             <Pin Id="NcSw8HCE4yoLb5v4hyDANR" Name="Port" Kind="InputPin" />
             <Pin Id="Kw4SYIHTr0uOVioDbMzyfK" Name="Open" Kind="InputPin" />
             <Pin Id="L7w58tkX8MJOugWr2i1y7H" Name="Result" Kind="OutputPin" />
+            <Pin Id="MoJG0YD4APxLPfpITyyhQL" Name="ButtonPressed" Kind="OutputPin" />
+            <Pin Id="NCCX6KupS8ZPeiOuzZ6ESp" Name="Buttons" Kind="OutputPin" />
             <Pin Id="BdQiVtyniNZO110OR3PwAl" Name="Is Open" Kind="OutputPin" />
           </Node>
+          <Pad Id="Ahns9FmolxdMlXrF4aaNrb" Comment="ButtonPressed" Bounds="456,329,37,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LtYkwhhPBobLP4E6hcffNL" Comment="Buttons" Bounds="605,340,59,34" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item>Edit</Item>
+            </p:Value>
+          </Pad>
         </Canvas>
         <Patch Id="RJIUQKdMseqPjPIWqdXeIs" Name="Create" />
         <Patch Id="AqhgJpT8xEYNkuxR9zT2xU" Name="Update" />
@@ -180,6 +188,8 @@
         <Link Id="NfNxBZbW1wxN5zB6MSz2ur" Ids="QYfSyx13CiQOQQBVfxWTOK,Kw4SYIHTr0uOVioDbMzyfK" />
         <Link Id="GcczX9NzMZ0QX8DQLlEloL" Ids="KUMgBX1ZPhfNxcyi6z2Xc3,NcSw8HCE4yoLb5v4hyDANR" />
         <Link Id="Hg96AZOybPMNYOX6iFPjz1" Ids="PWgLZr0Gc7WOewas2cLQYA,JuTo97OtOLQMoRJgYUjol3" />
+        <Link Id="DW7G40IWXv1QYHOfhILIYE" Ids="MoJG0YD4APxLPfpITyyhQL,Ahns9FmolxdMlXrF4aaNrb" />
+        <Link Id="HZZLUO0UObgNylVV6MM2qa" Ids="NCCX6KupS8ZPeiOuzZ6ESp,LtYkwhhPBobLP4E6hcffNL" />
       </Patch>
     </Node>
   </Patch>

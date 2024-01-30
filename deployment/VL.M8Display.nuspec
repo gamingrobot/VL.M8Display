@@ -18,6 +18,7 @@
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
     <file src="..\assets\**" target="assets\" exclude="" />
+    <file src="..\lib\**" target="lib\" exclude="" />
     <file src="..\README.md" target="docs\" />
   </files>
 </package>

@@ -29,7 +29,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IYIpz8zbpz0PK17jLUJC6m" Comment="Is Open" Bounds="524,344,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IYIpz8zbpz0PK17jLUJC6m" Comment="Is Open" Bounds="613,333,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PWgLZr0Gc7WOewas2cLQYA" Comment="Reset" Bounds="387,202,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -48,7 +48,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="419,299,81,19" Id="QvsBofoFxviLrxhvPW6dro">
+          <Node Bounds="419,299,168,19" Id="QvsBofoFxviLrxhvPW6dro">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.M8Display.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="M8ToSKImage" />
@@ -57,10 +57,12 @@
             <Pin Id="IaxSlSRtYA5MAphIga8OjO" Name="Port" Kind="InputPin" />
             <Pin Id="DPa3G0VtuuFL1JWvjPc0WD" Name="Open" Kind="InputPin" />
             <Pin Id="FvgJKxYuhkXLguIA8t98r3" Name="Result" Kind="OutputPin" />
+            <Pin Id="Fxxm80OykDoM35XwhHYHDb" Name="ButtonPressed" Kind="OutputPin" />
+            <Pin Id="Et5Gr0CpEI0NW8mSGIX7YV" Name="Buttons" Kind="OutputPin" />
             <Pin Id="DZ5g4YkhVToNx3Ytu8QZBb" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Pad Id="MI5j0jNokdFMtfvNd3AAoM" Comment="" Bounds="413,398,190,132" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="412,612,125,19" Id="QelbaGzVdpgNf0G3cxXr3G">
+          <Pad Id="MI5j0jNokdFMtfvNd3AAoM" Comment="" Bounds="392,442,190,132" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="402,664,125,19" Id="QelbaGzVdpgNf0G3cxXr3G">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawImage" />
@@ -75,7 +77,7 @@
             <Pin Id="QD0bMQwWvHQPrhktcOQrZd" Name="Output" Kind="OutputPin" />
             <Pin Id="DIj8qBOki4RLgIRW22gmG4" Name="Actual Bounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="406,686,145,19" Id="R545Xg3kv1sQUruVCYSZUW">
+          <Node Bounds="396,738,145,19" Id="R545Xg3kv1sQUruVCYSZUW">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
@@ -93,11 +95,15 @@
             <Pin Id="FYuY3xAKZjgNpfDY5sT2Yh" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="UmbUEWDBcF3Ob7zmZjeUfb" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Pad Id="C15uPiIuqQqOHv2ycIGlxJ" Comment="Size" Bounds="486,575,35,28" ShowValueBox="true" isIOBox="true" Value="2, 2">
+          <Pad Id="C15uPiIuqQqOHv2ycIGlxJ" Comment="Size" Bounds="476,627,35,28" ShowValueBox="true" isIOBox="true" Value="2, 2">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="OeuzJoD627HQOn0wWyOXkE" Comment="Buttons" Bounds="576,365,35,19" ShowValueBox="true" isIOBox="true">
+            <p:Value />
+          </Pad>
+          <Pad Id="HER9KyBQKLoNeilW0YpXsk" Comment="ButtonPressed" Bounds="429,388,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="RJIUQKdMseqPjPIWqdXeIs" Name="Create" />
         <Patch Id="AqhgJpT8xEYNkuxR9zT2xU" Name="Update" />
@@ -113,6 +119,8 @@
         <Link Id="AxUD1TzBFTWMFNumGXh6yR" Ids="MI5j0jNokdFMtfvNd3AAoM,M1rUIymTnIvMNNrVlNpNoM" />
         <Link Id="FH5bm9KF0r9PcAsvK6c2MJ" Ids="QD0bMQwWvHQPrhktcOQrZd,JP5XhKVTDIRPolr7h4CWOs" />
         <Link Id="VZY1WHPZG1TPPbvY4ddyhW" Ids="C15uPiIuqQqOHv2ycIGlxJ,HnkUnE9ru09OakKkaa7e4L" />
+        <Link Id="JWjKhU9oFxLMdSq8jw1tJZ" Ids="Et5Gr0CpEI0NW8mSGIX7YV,OeuzJoD627HQOn0wWyOXkE" />
+        <Link Id="IKK9pviXnBpM2YLVqB1PfK" Ids="Fxxm80OykDoM35XwhHYHDb,HER9KyBQKLoNeilW0YpXsk" />
       </Patch>
     </Node>
   </Patch>

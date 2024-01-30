@@ -8,3 +8,5 @@ obj/
 .vs/
 
 /.vl/*
+/lib/
+.idea

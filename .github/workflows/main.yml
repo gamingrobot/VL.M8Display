@@ -24,5 +24,6 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.42
       with:
+        csproj: src\VL.M8Display.csproj
         nuspec: deployment\VL.M8Display.nuspec 
         nuget-key: ${{ secrets.NUGET_KEY }}
