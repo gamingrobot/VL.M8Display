@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.M8Display</id>
-    <version>1.0.3</version>
+    <version>1.1.0</version>
     <title>VL.M8Display</title>
     <authors>gamingrobot</authors>
     <owners>gamingrobot</owners>
