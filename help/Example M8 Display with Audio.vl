@@ -20,7 +20,7 @@
               <Choice Kind="TypeFlag" Name="ComPort" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QYfSyx13CiQOQQBVfxWTOK" Comment="Open" Bounds="639,225,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="QYfSyx13CiQOQQBVfxWTOK" Comment="Open" Bounds="639,225,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
